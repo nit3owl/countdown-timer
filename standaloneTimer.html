@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!-- Loading Bootstrap -->
+		<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+		<!-- Loading Flat UI -->
+		<link href="css/flat-ui.min.css" rel="stylesheet">
+		<!-- timer css -->
+		<link href="css/timer.css" rel="stylesheet">
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+		<!--[if lt IE 9]>
+		  <script src="js/vendor/html5shiv.js"></script>
+		  <script src="js/vendor/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		 <!-- Timer Section -->
+		<section  id="timer">
+			<div class="container">
+				<div class="row col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6">
+			<div class="tile">
+				<div id="time" class="row displaySection display" style="padding-top: 20px; padding-bottom: 20px;">
+					<div id="hours" class="col-xs-4">00</div>
+					<div id="minutes" class="col-xs-4">00</div>
+					<div id="seconds" class="col-xs-4">00</div>
+				</div>
+				<div class="displaySection" style="margin-top: 10px;">
+					<div class="row" style="padding-top: 5px;">
+						<div class="col-xs-4"><button type="button" value="1" class="timerBtn btn btn-default btn-lg" id="btn1">1</button></div> 
+						<div class="col-xs-4"><button type="button" value="2" class="timerBtn btn btn-default btn-lg" id="btn2">2</button></div>
+						<div class="col-xs-4"><button type="button" value="3" class="timerBtn btn btn-default btn-lg" id="btn3">3</button></div>
+					</div>
+					<div class="row" style="padding-top: 5px;">
+						<div class="col-xs-4"><button type="button" value="4" class="timerBtn btn btn-default btn-lg" id="btn4">4</button></div>
+						<div class="col-xs-4"><button type="button" value="5" class="timerBtn btn btn-default btn-lg" id="btn5">5</button></div>
+						<div class="col-xs-4"><button type="button" value="6" class="timerBtn btn btn-default btn-lg" id="btn6">6</button></div>
+					</div>
+					<div class="row" style="padding-top: 5px;">
+						<div class="col-xs-4"><button type="button" value="7" class="timerBtn btn btn-default btn-lg" id="btn7">7</button></div>
+						<div class="col-xs-4"><button type="button" value="8" class="timerBtn btn btn-default btn-lg" id="btn8">8</button></div>
+						<div class="col-xs-4"><button type="button" value="9" class="timerBtn btn btn-default btn-lg" id="btn9">9</button></div>
+					</div>
+					<div class="row" style="padding-top: 5px; padding-bottom: 5px">
+						<div class=" col-xs-offset-4 col-xs-4"><button type="button" value="0" class="timerBtn btn btn-default btn-lg" id="btn0">0</button></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 text-center" style="padding-top: 10px;">
+						<button type="button" id="startStop" class="btn btn-danger startStopBtn" onclick="startTimer();">Start/Stop</button>
+					</div>
+					<div class="col-xs-12  col-sm-6 text-center" style="padding-top: 10px;">
+						<button  type="button" id="reset" class="btn btn-danger startStopBtn" onclick="resetTimer();">Reset</button>
+					</div>
+				</div>
+			</div>
+				</div>
+				</div>
+			</div>
+		</section>
+		<!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+		<script src="js/vendor/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/vendor/video.js"></script>
+		<script src="js/flat-ui.min.js"></script>
+		<!-- timer logic -->
+		<script src="js/timer.js"></script>
+	</body>
+</html>
