@@ -21,6 +21,12 @@
 		margin-top: 75px;
 	}
 }
+/*override freelancer navbar height - no scroll = too big*/
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 10px 0;
+    }
+}
 .displaySection{
 	text-align: center;
 	font-weight: bold;
