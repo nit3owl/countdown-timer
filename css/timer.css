@@ -1,7 +1,6 @@
 /*!
  * Teacher Timer CSS by Nit3Owl Dev (http://nit3owl.github.io)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ * Code licensed under the MIT License.
  */
 
 @media(max-width:767px){
@@ -14,6 +13,12 @@
 		padding: 0px;
 	}
 }
+/*override freelancer navbar height - no scroll = too big*/
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 10px 0;
+    }
+}
 @media(min-width:481px){
     .section{
         padding-top: 85px;
@@ -24,12 +29,23 @@
 		padding: 0px;
 		margin-top: 75px;
 	}
-}
-/*override freelancer navbar height - no scroll = too big*/
-@media(min-width:768px) {
-    .navbar-fixed-top {
-        padding: 10px 0;
+    body #time{
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
+    body .display{
+        font-size: 34px;
+    }
+    body .btn-default{
+        font-size: 28px;
+    }
+    body .startStopBtn{
+        height: auto;
+    }
+}
+#time{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .displaySection{
 	text-align: center;
