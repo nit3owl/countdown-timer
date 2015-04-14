@@ -14,9 +14,13 @@
 		padding: 0px;
 	}
 }
-/*override freelancer style for mobile on timer page*/
+@media(min-width:481px){
+    .section{
+        padding-top: 85px;
+    }
+}
 @media(max-width:480px){
-	section{
+	.section{
 		padding: 0px;
 		margin-top: 75px;
 	}
