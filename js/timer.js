@@ -69,7 +69,7 @@ function expired(){
 }
 
 $(document).ready(function(){
-	$(".btn-default").click(function(){
+	$(".timerBtn").click(function(){
 		var that = $(this);
 		
 		seconds = seconds * 10 + parseInt(that.val());
@@ -85,7 +85,7 @@ $(document).ready(function(){
 			hours = hours * 10 + tmin;
 		}
 		if(hours > 9)
-			$(".btn-default").prop('disabled', true);							
+			$(".timerBtn").prop('disabled', true);							
 		
 		secondsText.innerHTML = seconds <= 9 ? "0" + seconds : seconds;
 		minutesText.innerHTML = minutes <= 9 ? "0" + minutes : minutes;
