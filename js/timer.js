@@ -19,7 +19,8 @@ function count() {
 				resetTimer();
 				startStop.onclick = resetTimer;
 				$(".btn-default").prop('disabled', true);							
-				interval = setInterval(expired, 1000);
+                $("#time").addClass("expired");
+                interval = setInterval(expired, 1000);
 			}
 			else
 				hoursText.innerHTML = hours <= 9 ? "0" + hours : hours;
