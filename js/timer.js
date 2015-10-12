@@ -21,6 +21,8 @@ function count() {
 				$(".btn-default").prop('disabled', true);							
                 $("#time").addClass("expired");
                 interval = setInterval(expired, 1000);
+				if(!document.hasFocus())
+					window.alert("Time has Expired!");
 			}
 			else
 				hoursText.innerHTML = hours <= 9 ? "0" + hours : hours;
