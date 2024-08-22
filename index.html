@@ -6,10 +6,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Simple github page based on freelancer startbootstrap">
-    <meta name="author" content="NIT3OWL Development">
+    <meta name="description" content="Toy JavaScript project implementing a countdown timer.">
+    <meta name="author" content="Geoff Wellington">
+    <meta name="keywords"
+          content="geoff wellington,geoffrey wellington,software engineer,staff software engineer,senior software engineer,seattle,redmond">
+    <meta property="og:title" content="Geoff Wellington | Staff Software Engineer &amp; Technical Lead">
+    <meta property="og:description"
+          content="Personal website, resume, and portfolio for Geoff Wellington, staff software engineer.">
+    <meta property="og:url" content="https://www.geoffwellington.com/">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Geoff Wellington | Staff Software Engineer &amp; Technical Lead">
+    <meta name="twitter:description"
+          content="Personal website, resume, and portfolio for Geoff Wellington, staff software engineer.">
 
-    <title>NIT3OWL Development - Teacher Timer</title>
+    <title>Geoff Wellington | Teacher Timer</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="startbootstrap-freelancer-1.0.2/css/bootstrap.css" rel="stylesheet">
@@ -21,142 +33,173 @@
     <!-- Custom Fonts -->
     <link href="startbootstrap-freelancer-1.0.2/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
 
 <body id="page-top" class="index">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-		<a class="navbar-brand" href="http://nit3owl.github.io/index.html"><i class="fa fa-moon-o"></i> Nit3Owl Development</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="page-scroll">
-						<a href="#contactModal" class="portfolio-liink" data-toggle="modal">Questions or Comments</a> 
-					</li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-	
-    <!-- Timer Section -->
-    <div id="timer" class="section">
-        <div class="container">
-            <div class="row col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6">
-		<div class="tile">
-			<div id="time" class="row displaySection display">
-				<div id="hours" class="col-xs-4">00</div>
-				<div id="minutes" class="col-xs-4">00</div>
-				<div id="seconds" class="col-xs-4">00</div>
-			</div>
-			<div id="numBtnSection" class="displaySection">
-				<div class="row" style="padding-top: 3px;">
-					<div class="col-xs-4"><button type="button" value="1" class="timerBtn btn btn-default btn-lg" id="btn1">1</button></div> 
-					<div class="col-xs-4"><button type="button" value="2" class="timerBtn btn btn-default btn-lg" id="btn2">2</button></div>
-					<div class="col-xs-4"><button type="button" value="3" class="timerBtn btn btn-default btn-lg" id="btn3">3</button></div>
-				</div>
-				<div class="row" style="padding-top: 5px;">
-					<div class="col-xs-4"><button type="button" value="4" class="timerBtn btn btn-default btn-lg" id="btn4">4</button></div>
-					<div class="col-xs-4"><button type="button" value="5" class="timerBtn btn btn-default btn-lg" id="btn5">5</button></div>
-					<div class="col-xs-4"><button type="button" value="6" class="timerBtn btn btn-default btn-lg" id="btn6">6</button></div>
-				</div>
-				<div class="row" style="padding-top: 5px;">
-					<div class="col-xs-4"><button type="button" value="7" class="timerBtn btn btn-default btn-lg" id="btn7">7</button></div>
-					<div class="col-xs-4"><button type="button" value="8" class="timerBtn btn btn-default btn-lg" id="btn8">8</button></div>
-					<div class="col-xs-4"><button type="button" value="9" class="timerBtn btn btn-default btn-lg" id="btn9">9</button></div>
-				</div>
-				<div class="row" style="padding-top: 5px; padding-bottom: 5px">
-					<div class=" col-xs-offset-4 col-xs-4"><button type="button" value="0" class="timerBtn btn btn-default btn-lg" id="btn0">0</button></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 text-center actionBtn">
-					<button type="button" id="startStop" class="btn btn-danger startStopBtn" onclick="startTimer();">Start/Stop</button>
-				</div>
-				<div class="col-xs-12  col-sm-6 text-center actionBtn">
-					<button  type="button" id="reset" class="btn btn-danger startStopBtn" onclick="resetTimer();">Reset</button>
-				</div>
-			</div>
-		</div>
-			</div>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <div style="display: flex; align-items: center; padding-top: 0.25em; padding-bottom: 0.25em">
+                <img src="assets/owl-angry-svgrepo-com.svg" alt="Angry Owl"
+                     style="filter: invert(100%); display: inline; vertical-align: center; height: 2.5em; padding-left: 1em">
+                <span style="padding-left: 0.5em; font-size: 2.5em">Teacher Timer</span>
             </div>
         </div>
+        <!-- /.navbar-collapse -->
     </div>
-    <div class="portfolio-modal modal fade" id="contactModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Timer Section -->
+<div id="timer" class="section">
+    <div class="container">
+        <div class="row col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6">
+            <div class="tile">
+                <div id="time" class="row displaySection display">
+                    <div id="hours" class="col-xs-4">00</div>
+                    <div id="minutes" class="col-xs-4">00</div>
+                    <div id="seconds" class="col-xs-4">00</div>
+                </div>
+                <div id="numBtnSection" class="displaySection">
+                    <div class="row" style="padding-top: 3px;">
+                        <div class="col-xs-4">
+                            <button type="button" value="1" class="timerBtn btn btn-default btn-lg" id="btn1">1</button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button type="button" value="2" class="timerBtn btn btn-default btn-lg" id="btn2">2</button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button type="button" value="3" class="timerBtn btn btn-default btn-lg" id="btn3">3</button>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 5px;">
+                        <div class="col-xs-4">
+                            <button type="button" value="4" class="timerBtn btn btn-default btn-lg" id="btn4">4</button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button type="button" value="5" class="timerBtn btn btn-default btn-lg" id="btn5">5</button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button type="button" value="6" class="timerBtn btn btn-default btn-lg" id="btn6">6</button>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 5px;">
+                        <div class="col-xs-4">
+                            <button type="button" value="7" class="timerBtn btn btn-default btn-lg" id="btn7">7</button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button type="button" value="8" class="timerBtn btn btn-default btn-lg" id="btn8">8</button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button type="button" value="9" class="timerBtn btn btn-default btn-lg" id="btn9">9</button>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 5px; padding-bottom: 5px">
+                        <div class=" col-xs-offset-4 col-xs-4">
+                            <button type="button" value="0" class="timerBtn btn btn-default btn-lg" id="btn0">0</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 text-center actionBtn">
+                        <button type="button" id="startStop" class="btn btn-danger startStopBtn"
+                                onclick="startTimer();">Start/Stop
+                        </button>
+                    </div>
+                    <div class="col-xs-12  col-sm-6 text-center actionBtn">
+                        <button type="button" id="reset" class="btn btn-danger startStopBtn" onclick="resetTimer();">
+                            Reset
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="modal-body">
-                            <h3>Questions or Comments?</h3>
-							<hr class="star-light">
-							<p>If you have questions, comments, or feature requests, please feel free to contact me on GitHub or via email.</p>
-							<p>On GitHub, you can submit an issue with your bug report or feature request and it will be reviewed for attention.  If you're unfamiliar with GitHub, please feel free to send an email instead.</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="portfolio-modal modal fade" id="contactModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="modal-body">
+                        <h3>Questions or Comments?</h3>
+                        <hr class="star-light">
+                        <p>If you have questions, comments, or feature requests, please feel free to contact me on
+                            GitHub or via email.</p>
+                        <p>On GitHub, you can submit an issue with your bug report or feature request and it will be
+                            reviewed for attention. If you're unfamiliar with GitHub, please feel free to send an email
+                            instead.</p>
 
-									<div class="row">
-										<div class="col-lg-12 text-center">
-											<h3>Contact the Dev</h3>
-											<ul class="list-inline">
-												<li>
-												<a href="mailto:nit3owldev@gmail.com" class="btn btn-default" style="font-size: 15px; font-weight: normal; width:100%"><i class="fa fa-envelope-o fa-fw"></i> <span class="network-name">Email</span></a>
-												</li>
-												<li>
-														<a href="https://github.com/nit3owl/teacher-timer/issues" class="btn btn-default" style="font-size: 15px; font-weight: normal; width:100%"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-												</li>
-										   </ul>
-									</div>
-								</div>
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <h3>Contact the Dev</h3>
+                                <ul class="list-inline">
+                                    <li>
+                                        <a href="mailto:nit3owldev@gmail.com" class="btn btn-default"
+                                           style="font-size: 15px; font-weight: normal; width:100%"><i
+                                                class="fa fa-envelope-o fa-fw"></i> <span
+                                                class="network-name">Email</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/nit3owl/teacher-timer/issues"
+                                           class="btn btn-default"
+                                           style="font-size: 15px; font-weight: normal; width:100%"><i
+                                                class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-	
-    <!-- jQuery -->
-    <script src="startbootstrap-freelancer-1.0.2/js/jquery.js"></script>
+</div>
+<!-- footer -->
+<div class="footer">
+    <div>
+        <hr/>
+        <span>Created by <a href="https://www.geoffwellington.com/" style="font-weight: bold"> Geoff Wellington</a></span>
+    </div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="startbootstrap-freelancer-1.0.2/js/bootstrap.min.js"></script>
+</div>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="startbootstrap-freelancer-1.0.2/js/classie.js"></script>
-    <script src="startbootstrap-freelancer-1.0.2/js/cbpAnimatedHeader.js"></script>
+<!-- jQuery -->
+<script src="startbootstrap-freelancer-1.0.2/js/jquery.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="startbootstrap-freelancer-1.0.2/js/freelancer.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="startbootstrap-freelancer-1.0.2/js/bootstrap.min.js"></script>
 
-    <!-- timer logic -->
-    <script src="js/timer.js"></script>
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="startbootstrap-freelancer-1.0.2/js/classie.js"></script>
+<script src="startbootstrap-freelancer-1.0.2/js/cbpAnimatedHeader.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="startbootstrap-freelancer-1.0.2/js/freelancer.js"></script>
+
+<!-- timer logic -->
+<script src="js/timer.js"></script>
 
 </body>
 </html>

@@ -96,3 +96,8 @@
 	bottom: 0;
 	width: 100%;
 }
+.footer {
+	margin: 35% auto 0;
+	width: 20em;
+	text-align: center;
+}

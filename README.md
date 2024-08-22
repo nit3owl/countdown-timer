@@ -14,17 +14,15 @@ If you use this timer for your on project, please remove any contact links to me
 
 Have a bug or want to request a new feature? [Open a new issue](https://github.com/nit3owl/teacher-timer/issues) on GitHub or email <nit3owldev@gmail.com>.
 
-## Creator
+## Author
 
-Start Bootstrap was created by and is maintained by (working name) **NIT3OWL** (real name **Geoff Wellington**), a software developer in VA, USA.
-
-* nit3owldev@gmail.com
+Geoff Wellington
 
 ## Copyright and License
 
 The Teacher Timer is:
 
-Copyright 2015 NIT3OWL Development under the [MIT License](https://github.com/nit3owl/teacher-timer/blob/master/LICENSE). That means you can use it as you want as long as you maintain attribution.
+Copyright 2024 NIT3OWL Development under the [MIT License](https://github.com/nit3owl/teacher-timer/blob/master/LICENSE). That means you can use it as you want as long as you maintain attribution.
 
 The Freelancer theme is:
 
